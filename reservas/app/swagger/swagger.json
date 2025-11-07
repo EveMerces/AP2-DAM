@@ -7,7 +7,7 @@
   },
   "basePath": "/",
   "paths": {
-    "/reservas": {
+    "/api/Reservas": {
       "get": {
         "summary": "Listar todas as reservas",
         "responses": {
@@ -19,6 +19,23 @@
         "responses": {
           "201": { "description": "Criado com sucesso" }
         }
+      }
+    },
+    "/api/reservas/{id}": {
+      "get": {
+        "summary": "Obter reserva por ID",
+        "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer" }}],
+        "responses": { "200": { "description": "Sucesso" } }
+      },
+      "put": {
+        "summary": "Atualizar reserva",
+        "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer" }}],
+        "responses": { "200": { "description": "Atualizado" } }
+      },
+      "delete": {
+        "summary": "Remover reserva",
+        "parameters": [{ "name": "id", "in": "path", "required": true, "schema": { "type": "integer" }}],
+        "responses": { "200": { "description": "Removido" } }
       }
     }
   }
