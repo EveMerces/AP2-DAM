@@ -64,7 +64,3 @@ Observações importantes (para avaliador)
 - Cada serviço persiste seus dados em SQLite local (arquivos dentro das pastas dos serviços / volumes Docker).
 - Para rodar sem Docker: abra 3 terminais, instale dependências (`pip install -r requirements.txt`) em cada serviço e rode `python run.py`. Configure `GERENCIAMENTO_API_URL` para `http://localhost:5000/api` antes de iniciar `reservas` e `atividades`.
 
-Entrega
-- Entregar o repositório contendo as 3 pastas (`api-colegio`, `reservas`, `atividades`) e o `docker-compose.yml` na raiz. Um integrante faz o envio e lista os nomes dos outros integrantes.
-
-Se quiser, eu adiciono rapidamente exemplos curl/PowerShell prontos para cada passo de teste.
